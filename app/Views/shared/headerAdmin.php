@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Menu de Navegación</title>
+    <style>
+        .nav-link {
+            transition: background-color 0.3s;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(0, 123, 255, 0.1);
+        }
+    </style>
 </head>
 
 <body>
@@ -22,7 +31,7 @@
                     <a href="/" class="nav-link active">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?php echo site_url('/signup');?>" class="nav-link">Signup</a>
+                    <a href="/" class="nav-link">Signup</a>
                 </li>
                 <li class="nav-item">
                     <a href="/" class="nav-link">Logout</a>

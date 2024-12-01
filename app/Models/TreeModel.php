@@ -4,15 +4,15 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class CountryModel extends Model
+class TreeModel extends Model
 {
-    protected $table            = 'country';
+    protected $table            = 'arboles';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['name'];
+    protected $allowedFields    = ['especie', 'nombre_cientifico', 'tamaño', 'ubicacion_geografica', 'estado', 'precio', 'foto', 'fecha_actualizada'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;

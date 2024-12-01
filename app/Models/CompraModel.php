@@ -4,15 +4,15 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Tree extends Model
+class CompraModel extends Model
 {
-    protected $table            = 'arboles';
+    protected $table            = 'mis_compras';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['especie', 'nombre_cientifico', 'tamaño', 'ubicacion_geografica', 'estado', 'precio', 'foto'];
+    protected $allowedFields    = ['nombre_comprador', 'especie', 'tamaño', 'ubicacion_geografica', 'estado', 'precio', 'foto'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
