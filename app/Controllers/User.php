@@ -38,8 +38,8 @@ class User extends BaseController
             'username' => $this->request->getPost('username'),
             'address' => $this->request->getPost('address'),
             'country' => $this->request->getPost('country'),
-            'password' => $this->request->getPost('password')
-        ];
+            'password' =>  password_hash($this->request->getPost('password'), PASSWORD_BCRYPT), 
+            'role' => 'amigo'];
 
         $this->userModel->insert($data);
     }

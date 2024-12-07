@@ -7,10 +7,10 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/signup','User::signup');
-$routes->post('user/register','User::create');
+$routes->get('/trees','TreeList::trees');
 $routes->get('/addTree', 'Tree::addTree');
-$routes->post('arbol/register', 'Tree::create');
 $routes->get('/compra','Compra::compra');
+$routes->get('/treeDetails','TreeDetails::treeDetails');
+$routes->post('user/register','User::create');
 $routes->post('compra/register','Compra::create');
-$routes->get('/trees','List::index');
-$routes->get('/treeDetails','TreeDetails::index');
+$routes->post('arbol/register', 'Tree::create');
